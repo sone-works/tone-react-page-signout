@@ -2089,19 +2089,19 @@
   resolved "https://registry.yarnpkg.com/@sone-dao/sone-react-utils/-/sone-react-utils-1.0.1.tgz#81da4c7e8c83115b66e4b4b875f6e77554770328"
   integrity sha512-48hho0n41lqMY5NByAqnMPy11vVN5xXOYwTapdOvgRHVtVZVboA5U/zRJcLEzbvTN/P8w6gzCuqXfgh/xyTHiA==
 
-"@sone-dao/tone-react-api@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@sone-dao/tone-react-api/-/tone-react-api-2.2.0.tgz#023139bf2bb2ce7420deeeadaaa613d9d8feead2"
-  integrity sha512-5uKMtjtJDyMW57BmKuKc5TsdsgajKXj8T9txZWvZZzJwdvXcCsq/xcjnzjr9UX5R6sNt9DSluDWpcj507ISpmw==
+"@sone-dao/tone-react-api@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@sone-dao/tone-react-api/-/tone-react-api-2.4.0.tgz#3f43fafef1ccf53cac083b9f628059322cbf8043"
+  integrity sha512-q8D6XH0yJ8Jj/uusVu6slAJn3YViHqrZNX6IeFPJkQ45N1naB1ESPBLAi3eQloC0mOEgVkuRse5caA+zZuAPmg==
   dependencies:
     "@sone-dao/sone-react-utils" "^1.0.1"
     axios "^1.4.0"
     cookies-next "^4.1.0"
 
-"@sone-dao/tone-react-core-ui@^2.10.0":
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/@sone-dao/tone-react-core-ui/-/tone-react-core-ui-2.10.0.tgz#8a4c1d298f5d6a62d1219a9d67f43dab41d0190d"
-  integrity sha512-jC6OGLyLQlr+NfYPBgeSjkx8RFpgFFGY0z0UfM3uKcvWelIDiJmN7wgMM6XlOXHGKuIbjmQU+FfBn4Do2vgQbw==
+"@sone-dao/tone-react-core-ui@^2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@sone-dao/tone-react-core-ui/-/tone-react-core-ui-2.11.0.tgz#c1810a8a4c2840b11d0789a224ac4413c2d9f67b"
+  integrity sha512-OjbdxyYngcQg6HcErijA2SlPlh4SPz88TKGOABO3zkZ6pd1vmeD4IgzbCjqiYmdlcCgIcrXR4LeedalTa5SnrA==
   dependencies:
     "@nextui-org/react" "^2.2.9"
     "@sone-dao/sone-react-utils" "^1.0.1"
@@ -4973,6 +4973,11 @@ use-sync-external-store@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
   integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
+
+usehooks-ts@^2.9.1:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/usehooks-ts/-/usehooks-ts-2.9.1.tgz#953d3284851ffd097432379e271ce046a8180b37"
+  integrity sha512-2FAuSIGHlY+apM9FVlj8/oNhd+1y+Uwv5QNkMQz1oSfdHk4PXo1qoCw9I5M7j0vpH8CSWFJwXbVPeYDjLCx9PA==
 
 util-deprecate@^1.0.1:
   version "1.0.2"
