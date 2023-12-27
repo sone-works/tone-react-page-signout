@@ -66,9 +66,9 @@ export default function SignoutPage({ useUserStore }: SignoutPageProps) {
       .then((response) => {
         localStorage.removeItem('tone.session')
 
-        useUserStore.setState({}, true)
-
         deleteCookie('tone.session')
+
+        useUserStore.setState({ isLoggedIn: false }, true)
 
         router.push('/')
       })
