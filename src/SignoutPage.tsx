@@ -12,7 +12,7 @@ type SignoutPageProps = {
 export default function SignoutPage({ useUserStore }: SignoutPageProps) {
   const [handFlip, setHandFlip] = useState<boolean>(false)
   const [count, { startCountdown }] = useCountdown({
-    countStart: 5,
+    countStart: 4,
     intervalMs: 1000,
   })
 
@@ -33,31 +33,29 @@ export default function SignoutPage({ useUserStore }: SignoutPageProps) {
   count == 0 && signoutUser()
 
   return (
-    <main className="flex items-center justify-center bg-global grow h-full p-4">
-      <div className="flex flex-col items-center w-full max-w-xl">
-        <span className="font-release text-global text-5xl m-4">tone</span>
-        <div className="p-4 rounded-xl bg-global-flipped text-global-flipped flex flex-col items-center w-full">
-          <p className="p-2 font-content">
-            Thanks for stopping by!
-            <i
-              className="fa-fw fa-solid fa-hand-wave ml-1"
-              style={{ transform: handFlip ? 'scaleX(-1)' : '' }}
-            />
-          </p>
-          <p className="mt-2 font-content">
-            We're signing you out{' '}
-            {count ? (
-              <>
-                in {count} second
-                {count > 1 && 's'}...
-              </>
-            ) : (
-              <>now...</>
-            )}
-          </p>
-        </div>
+    <div className="flex flex-col items-center justify-center h-full w-full p-4">
+      <span className="font-release text-global text-5xl m-4">tone</span>
+      <div className="flex flex-col p-4 rounded-xl border-4 border-global text-global w-full">
+        <p className="p-2 font-content">
+          Thanks for stopping by!
+          <i
+            className="fa-fw fa-solid fa-hand-wave ml-1"
+            style={{ transform: handFlip ? 'scaleX(-1)' : '' }}
+          />
+        </p>
+        <p className="mt-2 font-content">
+          We're signing you out{' '}
+          {count ? (
+            <>
+              in {count} second
+              {count > 1 && 's'}...
+            </>
+          ) : (
+            <>now...</>
+          )}
+        </p>
       </div>
-    </main>
+    </div>
   )
 
   async function signoutUser() {
